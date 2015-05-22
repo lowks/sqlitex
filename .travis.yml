@@ -3,6 +3,8 @@ otp_release:
  - 17.4
 elixir:
  - 1.0
+env:
+  - MIX_ENV=dev
 after_script:
-  - MIX_ENV=dev mix deps.get
-  - MIX_ENV=dev mix inch.report
+  - mix deps.get
+  - mix inch.report
